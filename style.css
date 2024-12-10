@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #140314;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  .status {
+    margin-top: 40px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 0 auto;
+    justify-content: center;
+  
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f5e8e8;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .cell.taken {
+    pointer-events: none;
+  }
+  
+  
+  button.cell.x {
+    color: darkblue;
+    font-weight: 550;
+    font-size: 50px;
+  }
+  
+  button.cell.o {
+    color: darkred;
+    font-weight: 550;
+    font-size: 50px;
+  }
+  
+  button.cell.disabled {
+    cursor: not-allowed;
+  }
+  
+  button#turnIndicator {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  #restart {
+    padding: 10px 30px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(13, 90, 17);
+    color: white;
+    border-radius: 15px;
+    border: none;
+  }
